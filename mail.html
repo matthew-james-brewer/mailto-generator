@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang = 'en-US' dir = 'ltr' id='all'>
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #FFFFFF;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<br>
+<body>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <style>
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+</style>
+   <button onclick='document.getElementById("all").style.cursor = "alias";closeNav();' class="alias">alias</button>
+<button onclick='document.getElementById("all").style.cursor = "all-scroll";closeNav();' class="all-scroll">all-scroll</button>
+<button onclick='document.getElementById("all").style.cursor = "auto";closeNav();' class="auto">auto</button>
+<button onclick='document.getElementById("all").style.cursor = "cell";closeNav();' class="cell">cell</button>
+<button onclick='document.getElementById("all").style.cursor = "context-menu";closeNav();' class="context-menu">context-menu</button>
+<button onclick='document.getElementById("all").style.cursor = "col-resize";closeNav();' class="col-resize">col-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "copy";closeNav();' class="copy">copy</button>
+<button onclick='document.getElementById("all").style.cursor = "crosshair";closeNav();' class="crosshair">crosshair</button>
+<button onclick='document.getElementById("all").style.cursor = "default";closeNav();' class="default">default</button>
+<button onclick='document.getElementById("all").style.cursor = "e-resize";closeNav();' class="e-resize">e-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "ew-resize";closeNav();' class="ew-resize">ew-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "grab";closeNav();' class="grab">grab</button>
+<button onclick='document.getElementById("all").style.cursor = "grabbing";closeNav();' class="grabbing">grabbing</button>
+<button onclick='document.getElementById("all").style.cursor = "help";closeNav();' class="help">help</button>
+<button onclick='document.getElementById("all").style.cursor = "move";closeNav();' class="move">move</button>
+<button onclick='document.getElementById("all").style.cursor = "n-resize";closeNav();' class="n-resize">n-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "ne-resize";closeNav();' class="ne-resize">ne-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "nesw-resize";closeNav();' class="nesw-resize">nesw-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "ns-resize";closeNav();' class="ns-resize">ns-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "nw-resize";closeNav();' class="nw-resize">nw-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "nwse-resize";closeNav();' class="nwse-resize">nwse-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "no-drop";closeNav();' class="no-drop">no-drop</button>
+<button onclick='document.getElementById("all").style.cursor = "none";closeNav();' class="none">none</button>
+<button onclick='document.getElementById("all").style.cursor = "not-allowed";closeNav();' class="not-allowed">not-allowed</button>
+<button onclick='document.getElementById("all").style.cursor = "pointer";closeNav();' class="pointer">pointer</button>
+<button onclick='document.getElementById("all").style.cursor = "progress";closeNav();' class="progress">progress</button>
+<button onclick='document.getElementById("all").style.cursor = "row-resize";closeNav();' class="row-resize">row-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "s-resize";closeNav();' class="s-resize">s-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "se-resize";closeNav();' class="se-resize">se-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "sw-resize";closeNav();' class="sw-resize">sw-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "text";closeNav();' class="text">text</button>
+<button onclick='document.getElementById("all").style.cursor = "w-resize";closeNav();' class="w-resize">w-resize</button>
+<button onclick='document.getElementById("all").style.cursor = "wait";closeNav();' class="wait">wait</button>
+<button onclick='document.getElementById("all").style.cursor = "zoom-in";closeNav();' class="zoom-in">zoom-in</button>
+<button onclick='document.getElementById("all").style.cursor = "zoom-out";closeNav();' class="zoom-out">zoom-out</button>
+<button onclick='var url = window.prompt("enter a url for your cursor");document.getElementById("all").style.cursor = "url("+url+"),auto";closeNav();'>custom url</button>
+    </div>
+
+<div id="main">
+
+  <button onclick="openNav()">edit cursor</button>
+</div>
+        <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    
+<button onclick='set_email();'>set email address</button>
+<br>
+<button onclick='set_phone();'>set phone address</button> (remove any - , ( , or ) characters
+<br>
+    <button onclick='email();'>email</button><i id='email'></i>
+<br>
+    <button onclick='text();'>text</button><i id='phone'></i>
+<br>
+<script src='./mail.js'></script>
+    </body>
+</html>
