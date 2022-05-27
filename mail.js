@@ -35,6 +35,6 @@ window.open(mailto);
 function text() {
     let subject = window.prompt("subject?");
     let body = window.prompt("body?");
-let mailto = encodeURI('mailto:'+phone+'@txt.att.net?body='+body+'&subject='+subject);
+let mailto = encodeURI('mailto:'+phone+'@txt.att.net?body='+body+' note: the phone number is not the real phone number, and you should just look at the name.&subject='+subject);
 window.open(mailto);
 }
