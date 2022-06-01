@@ -145,15 +145,23 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-    enter recipient emails with commas inbetween (<i>note:</i> use <strong><phone number>@txt.att.net</strong> to text phone numbers as recipients): <input id='recipients'>
+    <form onsubmit="submitForm(event)" id="form">
+        
+<script type="text/javascript">
+    function submitForm(event){
+        event.preventDefault();
+    }
+</script>
+    enter recipient emails with commas inbetween (<i>note:</i> use <strong><phone number>@txt.att.net</strong> to text phone numbers as recipients): <input>
 <br>
-    enter bcc recipient emails with commas inbetween: <input id='bcc'>
+    enter bcc recipient emails with commas inbetween: <input>
         <br>
-        enter subject: <input id='subject'>
+        enter subject: <input>
         <br>
-        enter body: <input id='body'>
+        enter body: <input>
 <br>
-    <button onclick='submit();'>submit</button>
+    <input type='submit'>
+        </form>
 <script src='./mail.js'></script>
     </body>
 </html>
