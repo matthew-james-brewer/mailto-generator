@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang = 'en-US' dir = 'ltr' id='all'>
+    <head>
+        <title>mailto generator</title>
+        <meta name='viewport' content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="./mailto.ico">
     <style>
 body {
@@ -92,6 +95,7 @@ body {
 .zoom-in {cursor: zoom-in;}
 .zoom-out {cursor: zoom-out;}
 </style>
+        </head>
    <button onclick='document.getElementById("all").style.cursor = "alias";closeNav();' class="alias">alias</button>
 <button onclick='document.getElementById("all").style.cursor = "all-scroll";closeNav();' class="all-scroll">all-scroll</button>
 <button onclick='document.getElementById("all").style.cursor = "auto";closeNav();' class="auto">auto</button>
@@ -160,7 +164,7 @@ function closeNav() {
         <br>
         enter subject: <input>
         <br>
-        enter body: <input>
+        enter body: <textarea rows="10" cols="100" />
 <br>
     <input type='submit'>
         </form>
