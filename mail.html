@@ -59,6 +59,10 @@ body {
     <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <style>
+	  #form {
+		  font-color: #FF5DFB;
+		  background-color: #58E7FF;
+	  }
 .alias {cursor: alias;}
 .all-scroll {cursor: all-scroll;}
 .auto {cursor: auto;}
@@ -147,17 +151,14 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-    <img src='./mailto.ico' width="512" height="288">
-    <form onsubmit="submitForm(event)" id="form">
-        
-<script type="text/javascript">
-    function submitForm(event){
+} 
+			function submitForm(event){
         event.preventDefault();
         submit();
     }
 </script>
+    <img src='./mailto.ico' width="512" height="288">
+    <form onsubmit="submitForm(event)" id="form">
     enter recipient emails with commas inbetween (<i>note:</i> use <strong><phone number>@txt.att.net</strong> to text phone numbers as recipients): <input>
 <br>
     enter bcc recipient emails with commas inbetween: <input>
