@@ -4,102 +4,12 @@
         <title>mailto generator</title>
         <meta name='viewport' content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="./mailto.ico">
-    <style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  color: #FFFFFF;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+	    <link rel='stylesheet' href='main.css'>
 <br>
 <body>
     <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <style>
-	  #form {
-		  font-color: #FF5DFB;
-		  background-color: #58E7FF;
-	  }
-.alias {cursor: alias;}
-.all-scroll {cursor: all-scroll;}
-.auto {cursor: auto;}
-.cell {cursor: cell;}
-.context-menu {cursor: context-menu;}
-.col-resize {cursor: col-resize;}
-.copy {cursor: copy;}
-.crosshair {cursor: crosshair;}
-.default {cursor: default;}
-.e-resize {cursor: e-resize;}
-.ew-resize {cursor: ew-resize;}
-.grab {cursor: -webkit-grab; cursor: grab;}
-.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
-.help {cursor: help;}
-.move {cursor: move;}
-.n-resize {cursor: n-resize;}
-.ne-resize {cursor: ne-resize;}
-.nesw-resize {cursor: nesw-resize;}
-.ns-resize {cursor: ns-resize;}
-.nw-resize {cursor: nw-resize;}
-.nwse-resize {cursor: nwse-resize;}
-.no-drop {cursor: no-drop;}
-.none {cursor: none;}
-.not-allowed {cursor: not-allowed;}
-.pointer {cursor: pointer;}
-.progress {cursor: progress;}
-.row-resize {cursor: row-resize;}
-.s-resize {cursor: s-resize;}
-.se-resize {cursor: se-resize;}
-.sw-resize {cursor: sw-resize;}
-.text {cursor: text;}
-.w-resize {cursor: w-resize;}
-.wait {cursor: wait;}
-.zoom-in {cursor: zoom-in;}
-.zoom-out {cursor: zoom-out;}
-</style>
-        </head>
+	    </head>
    <button onclick='document.getElementById("all").style.cursor = "alias";closeNav();' class="alias">alias</button>
 <button onclick='document.getElementById("all").style.cursor = "all-scroll";closeNav();' class="all-scroll">all-scroll</button>
 <button onclick='document.getElementById("all").style.cursor = "auto";closeNav();' class="auto">auto</button>
@@ -141,22 +51,7 @@ body {
 <div id="main">
 
   <button onclick="openNav()">edit cursor</button>
-</div>
-        <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-} 
-			function submitForm(event){
-        event.preventDefault();
-        submit();
-    }
-</script>
+	    </div>
     <img src='./mailto.ico' width="512" height="288">
     <form onsubmit="submitForm(event)" id="form">
     enter recipient emails with commas inbetween (<i>note:</i> use <strong><phone number>@txt.att.net</strong> to text phone numbers as recipients): <input>
